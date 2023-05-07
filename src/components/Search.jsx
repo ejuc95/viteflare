@@ -1,7 +1,7 @@
 import React from 'react'
 
 let timer = null
-const Search = ({ onChange }) => {
+const Search = ({ onChange, defaultValue = '' }) => {
   const handleChange = (e) => {
     const name = e.target.value
     if (timer) {
@@ -15,6 +15,7 @@ const Search = ({ onChange }) => {
     <input
       type='text'
       placeholder='Search'
+      defaultValue={defaultValue}
       className='input input-bordered input-primary w-full max-w-xs'
       onChange={handleChange}
     />

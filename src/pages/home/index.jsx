@@ -35,7 +35,7 @@ const Home = () => {
     <div className='p-4 w-full flex flex-col justify-start gap-4'>
       {loading && <p>Loading...</p>}
       <div className='w-full flex justify-center items-center'>
-        <Search onChange={search} />
+        <Search onChange={search} defaultValue={queries?.name || ''} />
       </div>
       <div className='w-full flex justify-center items-center'>
         <PageButtons
