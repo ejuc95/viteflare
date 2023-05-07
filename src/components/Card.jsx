@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Card = ({ image, name, id }) => {
   return (
@@ -6,7 +7,7 @@ const Card = ({ image, name, id }) => {
       <figure><img src={image} alt={name + id} /></figure>
       <div className='card-body'>
         <h2 className='card-title'>
-          {name}
+          <Link to={`/character/${id}`}>{name}</Link>
         </h2>
       </div>
     </div>

@@ -9,7 +9,6 @@ const Navbar = () => {
       <div className='flex-none'>
         <ul className='menu menu-horizontal px-1'>
           <li><Link to='/'>Home</Link></li>
-          <li><Link to='/characters'>Characters</Link></li>
         </ul>
       </div>
       <ToggleTheme />

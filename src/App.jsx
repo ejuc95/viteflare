@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Home from './pages/home'
-import Characters from './pages/characters'
+import Character from './pages/character'
 
 const App = () => {
   return (
@@ -10,7 +10,7 @@ const App = () => {
       <main className='w-full'>
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/characters' element={<Characters />} />
+          <Route path='/character/:id' element={<Character />} />
         </Routes>
       </main>
     </>
