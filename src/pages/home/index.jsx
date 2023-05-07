@@ -26,7 +26,8 @@ const Home = () => {
   const search = (value) => {
     setParams({
       ...queries,
-      name: value
+      name: value,
+      page: 1
     })
   }
 
